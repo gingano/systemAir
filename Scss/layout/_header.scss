@@ -1,0 +1,25 @@
+@media (min-width: 374px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+
+    .controls {
+      margin-right: 42px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 90px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    .controls {
+      margin-right: 0;
+    }
+  }
+}

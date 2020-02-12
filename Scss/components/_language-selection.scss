@@ -1,0 +1,21 @@
+@media (min-width: 374px) {
+  .language-selection {
+    display: flex;
+
+    .language-button:first-child {
+      margin: 0;
+    }
+
+    .language-button {
+      margin-left: 15px;
+      color: #808080;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .language-button-active {
+      color: #004985;
+    }
+  }
+}

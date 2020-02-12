@@ -1,0 +1,20 @@
+@import "components/logo";
+@import "components/nav";
+@import "components/controls";
+@import "components/language-selection";
+@import "components/search";
+@import "components/graphics";
+@import "components/nav-menu";
+@import "layout/header";
+@import "components/footer-main";
+@import "components/socials";
+@import "layout/footer";
+
+* {
+  outline: none;
+}
+
+body {
+  font-family: 'DaxlinePro', sans-serif;
+  overflow-x: hidden;
+}

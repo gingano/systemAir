@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>filebrowser</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link href="Css/Fonts/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="Css/file-browser.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="top-section">
+        <div class="address">
+            <p>You are here:</p>
+            <a class="address-item" href="#">Folder 1</a>
+            <a class="address-item" href="#">Subfolder 1-2</a>
+            <a class="address-item" href="#">Subfolder 1-2-2</a>
+        </div>
+
+        <form action="" class="search-form">
+            <input placeholder="Search" type="text">
+            <button></button>
+        </form>
+    </div>
+</div>
+
+<div class="main-section">
+    <div class="wrapper">
+        <input class="selector-checkbox" id="selector" type="checkbox">
+        <label class="selector-title" for="selector">Systemair Software Center</label>
+        <div class="selector-arrow"></div>
+
+        <div class="selector-body">
+            <form action="">
+                <ul class="selector-list">
+                    <li class="selector-item">
+                        <a href="#">Folder 1</a>
+                        <ul class="selector-list">
+                            <li class="selector-item">
+                                <a class="active-filter" href="#">Subfolder 1-1</a>
+                            </li>
+                            <li class="selector-item">
+                                <a href="#">Subfolder 1-2</a>
+                                <ul class="selector-list">
+                                    <li class="selector-item">
+                                        <a href="#">Subfolder 1-2-1</a>
+                                    </li>
+                                    <li class="selector-item">
+                                        <a href="#">Subfolder 1-2-2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="selector-item">
+                        <a href="#">Folder 2</a>
+                    </li>
+                    <li class="selector-item">
+                        <a href="#">Folder 3</a>
+                    </li>
+                    <li class="selector-item">
+                        <a href="#">Folder 4</a>
+                    </li>
+                    <li class="selector-item">
+                        <a href="#">Folder 5</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+
+    <div class="search-results">
+        <div class="title">
+            <span class="category">Name</span>
+            <span class="category">Type</span>
+            <span class="category">Size</span>
+        </div>
+        <div class="search-result-item">
+            <h3 class="item-title">HHFlex Hygiene Certifcate (English)</h3>
+            <div class="item-image">
+
+            </div>
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <p>hhflex_sa_mi_en_2015_10.pdf</p>
+            </div>
+
+            <div class="end-section">
+                <div>
+                    <span class="category">Type</span>
+                    <span class="value">PDF</span>
+                </div>
+
+                <div>
+                    <span class="category">Size</span>
+                    <span class="value">144 kB</span>
+                </div>
+
+                <a href="#" class="download-button">Download</a>
+            </div>
+        </div>
+
+        <div class="search-result-item">
+            <h3 class="item-title">HHFlex Hygiene Certifcate (English)</h3>
+            <div class="item-image">
+                <img src="./Images/search-result-img.png" alt="">
+            </div>
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <p>hhflex_sa_mi_en_2015_10.pdf</p>
+            </div>
+
+            <div class="end-section">
+                <div>
+                    <span class="category">Type</span>
+                    <span class="value">PDF</span>
+                </div>
+
+                <div>
+                    <span class="category">Size</span>
+                    <span class="value">144 kB</span>
+                </div>
+
+                <a href="#" class="download-button">Download</a>
+            </div>
+        </div>
+
+        <div class="search-result-item">
+            <h3 class="item-title">HHFlex Hygiene Certifcate (English)</h3>
+            <div class="item-image">
+
+            </div>
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <p>hhflex_sa_mi_en_2015_10.pdf</p>
+            </div>
+
+            <div class="end-section">
+                <div>
+                    <span class="category">Type</span>
+                    <span class="value">PDF</span>
+                </div>
+
+                <div>
+                    <span class="category">Size</span>
+                    <span class="value">144 kB</span>
+                </div>
+
+                <a href="#" class="download-button">Download</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="JavaScript/filebrowser.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+@media (min-width: 374px) {
+  .search {
+    .search-button {
+      width: 20px;
+      height: 19px;
+      background: url("../../Icons/search-icon.svg") no-repeat 4px 2px;
+      background-size: 12px;
+      border-bottom: 1px solid #004985;
+      margin-bottom: -5px;
+      transition: .3s;
+
+      .line {
+        opacity: 0;
+        position: absolute;
+        top: 9px;
+        left: 5px;
+        width: 50%;
+        height: 1px;
+        background: #fff;
+        transition: .3s;
+      }
+
+      .line:nth-child(1){
+        transform: rotate(55deg);
+      }
+
+      .line:nth-child(2) {
+        transform: rotate(-55deg);
+      }
+    }
+
+    .search-checkbox {
+      position: absolute;
+      width: 0;
+      height: 0;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .search-checkbox:checked ~ .search-button {
+      transform: scale(1.5);
+      padding: 0;
+      background: #00a7d8;
+      transition: .3s;
+      border-bottom: #00a7d8;
+
+      .line {
+        opacity: 1;
+      }
+    }
+
+    .search-checkbox:checked ~ .search-field {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .search-field {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 50px;
+      width: 100%;
+      height: 75px;
+      background-color: #f8f8f8;
+      transition: .3s;
+
+      .container {
+        margin: 0 auto;
+      }
+
+      .search-input {
+        background: none;
+        border: none;
+        border-bottom: 1px solid #004985;
+        width: 100%;
+        margin-right: 24px;
+      }
+
+      .search-input::placeholder {
+        color: #004985;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .confirm-button {
+        padding: 0 26px 0 10px;
+        border: 1px solid #004985;
+        background: none;
+        color: #004985;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .search {
+    .search-button {
+      width: 30px;
+      height: 30px;
+      background-size: 16px;
+      background-position: 5px;
+
+      transform: scale(1) !important;
+
+      .line {
+        top: 14px;
+        left: 7.5px;
+      }
+    }
+
+    .search-field {
+      top: 90px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .search {
+    .search-field {
+      background: none;
+
+      .container {
+        background-color: #f8f8f8;
+        height: 100%;
+        align-items: center;
+
+        .confirm-button, .search-input {
+          height: 26px;
+        }
+      }
+    }
+  }
+}

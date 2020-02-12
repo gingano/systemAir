@@ -1,0 +1,15 @@
+@media (min-width: 374px) {
+  .controls {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+
+    div:first-child {
+      margin-left: 0;
+    }
+
+    div {
+      margin-left: 21px;
+    }
+  }
+}
