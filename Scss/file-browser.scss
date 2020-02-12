@@ -212,6 +212,10 @@ body {
     padding: 0 20px;
     width: 100%;
 
+    .title {
+      display: none;
+    }
+
     .search-result-item {
       padding: 31px 0;
       display: flex;
@@ -223,6 +227,7 @@ body {
         color: #1e528b;
         font-size: 18px;
         font-weight: 600;
+        width: 100%;
       }
 
       .item-image {
@@ -372,13 +377,19 @@ body {
           line-height: 18px;
         }
 
+        div {
+          width: 122px;
+
+          .category {
+            display: inline-block;
+            margin-left: 0 !important;
+            width: 58px !important;
+          }
+        }
+
         .category:nth-child(1) {
           margin-left: 131px;
           width: 395px;
-        }
-
-        .category:nth-child(2), .category:nth-child(3) {
-          width: 34px;
         }
       }
 
@@ -398,9 +409,10 @@ body {
         }
 
         .end-section {
+          align-items: flex-start;
           flex-wrap: wrap;
           width: 122px;
-          margin-top: -75px;
+          margin-top: -42px;
 
           div {
             display: flex;
@@ -414,6 +426,10 @@ body {
           .value {
             width: 60px;
             margin-left: 0;
+          }
+
+          .download-button {
+            margin-top: -60px;
           }
         }
       }

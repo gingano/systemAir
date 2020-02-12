@@ -177,6 +177,8 @@ body {
   .main-section .search-results {
     padding: 0 20px;
     width: 100%; }
+    .main-section .search-results .title {
+      display: none; }
     .main-section .search-results .search-result-item {
       padding: 31px 0;
       display: -webkit-box;
@@ -188,7 +190,8 @@ body {
       .main-section .search-results .search-result-item .item-title {
         color: #1e528b;
         font-size: 18px;
-        font-weight: 600; }
+        font-weight: 600;
+        width: 100%; }
       .main-section .search-results .search-result-item .item-image {
         width: 101px;
         height: 78px;
@@ -300,11 +303,15 @@ body {
           font-size: 12px;
           font-weight: 300;
           line-height: 18px; }
+        .main-section .search-results .title div {
+          width: 122px; }
+          .main-section .search-results .title div .category {
+            display: inline-block;
+            margin-left: 0 !important;
+            width: 58px !important; }
         .main-section .search-results .title .category:nth-child(1) {
           margin-left: 131px;
           width: 395px; }
-        .main-section .search-results .title .category:nth-child(2), .main-section .search-results .title .category:nth-child(3) {
-          width: 34px; }
       .main-section .search-results .search-result-item .item-title {
         margin-left: 131px;
         margin-top: 0; }
@@ -314,9 +321,11 @@ body {
         margin-left: 131px;
         width: 395px; }
       .main-section .search-results .search-result-item .end-section {
+        -webkit-box-align: start;
+        align-items: flex-start;
         flex-wrap: wrap;
         width: 122px;
-        margin-top: -75px; }
+        margin-top: -42px; }
         .main-section .search-results .search-result-item .end-section div {
           display: -webkit-box;
           display: flex;
@@ -326,7 +335,9 @@ body {
           display: none; }
         .main-section .search-results .search-result-item .end-section .value {
           width: 60px;
-          margin-left: 0; } }
+          margin-left: 0; }
+        .main-section .search-results .search-result-item .end-section .download-button {
+          margin-top: -60px; } }
 
 @media (min-width: 992px) {
   .top-section {
