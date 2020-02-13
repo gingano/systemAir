@@ -709,3 +709,39 @@ body {
   width: 1290px;
   height: 616px;
   margin-left: auto; }
+
+.country-description-active {
+  visibility: visible !important;
+  opacity: 1 !important; }
+
+.country-description {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 2;
+  padding: 20px 32px;
+  position: absolute;
+  width: 309px;
+  min-height: 195px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background-color: #004985;
+  -webkit-transform: translate(-346px, -50%);
+  transform: translate(-346px, -50%); }
+
+.country-description:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  display: block;
+  width: 37px;
+  height: 3px;
+  background: #004985;
+  border-radius: 0 50% 50% 0; }
