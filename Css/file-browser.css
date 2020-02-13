@@ -8,16 +8,12 @@ body {
 
 .container {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
   margin-right: auto;
   margin-left: auto; }
 
 @media (min-width: 576px) {
   .container {
-    max-width: 540px;
-    padding-right: 30px;
-    padding-left: 30px; } }
+    max-width: 540px; } }
 
 @media (min-width: 768px) {
   .container {
@@ -291,8 +287,7 @@ body {
       .top-section .search-form input {
         width: auto; }
   .main-section {
-    margin-top: 30px;
-    padding: 0 30px; }
+    margin-top: 30px; }
     .main-section .wrapper {
       padding: 0;
       width: 344px; }
