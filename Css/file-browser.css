@@ -33,6 +33,16 @@ body {
 
 .top-section {
   width: 100%; }
+  .top-section h1, .top-section h2, .top-section h3, .top-section h4, .top-section h5, .top-section h6, .top-section p {
+    -webkit-margin-before: 1em;
+    margin-block-start: 1em;
+    -webkit-margin-after: 1em;
+    margin-block-end: 1em;
+    -webkit-margin-start: 0px;
+    margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+    margin-inline-end: 0px;
+    padding: 0; }
   .top-section .address {
     color: #283740;
     font-size: 16px;
@@ -105,6 +115,16 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column; }
+  .main-section h1, .main-section h2, .main-section h3, .main-section h4, .main-section h5, .main-section h6, .main-section p {
+    -webkit-margin-before: 1em;
+    margin-block-start: 1em;
+    -webkit-margin-after: 1em;
+    margin-block-end: 1em;
+    -webkit-margin-start: 0px;
+    margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+    margin-inline-end: 0px;
+    padding: 0; }
   .main-section .wrapper {
     display: -webkit-box;
     display: flex;
@@ -194,7 +214,10 @@ body {
         width: 100%; }
       .main-section .search-results .search-result-item .item-image {
         width: 101px;
-        height: 78px;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        min-height: 78px;
         background: #f7f7f7 url("../Icons/default-item-image.svg") no-repeat 50%; }
         .main-section .search-results .search-result-item .item-image img {
           border: 1px solid #1e528b;
@@ -203,6 +226,9 @@ body {
           padding: 10px; }
       .main-section .search-results .search-result-item .description {
         width: 65%; }
+        .main-section .search-results .search-result-item .description p {
+          word-break: break-word;
+          padding: 0; }
         .main-section .search-results .search-result-item .description p:first-child {
           margin-top: 0; }
       .main-section .search-results .search-result-item .end-section {
@@ -304,7 +330,7 @@ body {
           font-weight: 300;
           line-height: 18px; }
         .main-section .search-results .title div {
-          width: 122px; }
+          width: 150px; }
           .main-section .search-results .title div .category {
             display: inline-block;
             margin-left: 0 !important;
@@ -319,25 +345,30 @@ body {
         position: absolute; }
       .main-section .search-results .search-result-item .description {
         margin-left: 131px;
-        width: 395px; }
+        width: 395px;
+        min-height: 100px; }
+        .main-section .search-results .search-result-item .description p {
+          word-break: normal; }
       .main-section .search-results .search-result-item .end-section {
         -webkit-box-align: start;
         align-items: flex-start;
         flex-wrap: wrap;
-        width: 122px;
+        width: 150px;
         margin-top: -42px; }
         .main-section .search-results .search-result-item .end-section div {
           display: -webkit-box;
           display: flex;
           -webkit-box-align: center;
           align-items: center; }
+        .main-section .search-results .search-result-item .end-section div:first-child .value {
+          width: 60px; }
         .main-section .search-results .search-result-item .end-section .category {
           display: none; }
         .main-section .search-results .search-result-item .end-section .value {
-          width: 60px;
+          width: 85px;
           margin-left: 0; }
         .main-section .search-results .search-result-item .end-section .download-button {
-          margin-top: -60px; } }
+          margin-top: -25px; } }
 
 @media (min-width: 992px) {
   .top-section {
@@ -370,7 +401,9 @@ body {
     .main-section .search-results {
       width: 670px; }
       .main-section .search-results .title .category:nth-child(2), .main-section .search-results .title .category:nth-child(3) {
-        width: 50px; } }
+        width: 50px; }
+      .main-section .search-results .search-result-item .description {
+        width: 355px; } }
 
 @media (min-width: 1200px) {
   .top-section .search-form input {

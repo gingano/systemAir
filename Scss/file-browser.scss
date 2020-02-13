@@ -44,6 +44,14 @@ body {
 .top-section {
   width: 100%;
 
+  h1, h2, h3, h4, h5, h6, p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding: 0;
+  }
+
   .address {
     color: #283740;
     font-size: 16px;
@@ -111,6 +119,14 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+
+  h1, h2, h3, h4, h5, h6, p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding: 0;
+  }
 
   .wrapper {
     display: flex;
@@ -232,7 +248,8 @@ body {
 
       .item-image {
         width: 101px;
-        height: 78px;
+        height: fit-content;
+        min-height: 78px;
         background: #f7f7f7 url("../Icons/default-item-image.svg") no-repeat 50%;
 
         img {
@@ -245,6 +262,11 @@ body {
 
       .description {
         width: 65%;
+
+        p {
+          word-break: break-word;
+          padding: 0;
+        }
 
         p:first-child {
           margin-top: 0;
@@ -378,7 +400,7 @@ body {
         }
 
         div {
-          width: 122px;
+          width: 150px;
 
           .category {
             display: inline-block;
@@ -394,6 +416,7 @@ body {
       }
 
       .search-result-item {
+
         .item-title {
           margin-left: 131px;
           margin-top: 0;
@@ -406,12 +429,17 @@ body {
         .description {
           margin-left: 131px;
           width: 395px;
+          min-height: 100px;
+
+          p {
+            word-break: normal;
+          }
         }
 
         .end-section {
           align-items: flex-start;
           flex-wrap: wrap;
-          width: 122px;
+          width: 150px;
           margin-top: -42px;
 
           div {
@@ -419,17 +447,23 @@ body {
             align-items: center;
           }
 
+          div:first-child {
+            .value {
+              width: 60px;
+            }
+          }
+
           .category {
             display: none;
           }
 
           .value {
-            width: 60px;
+            width: 85px;
             margin-left: 0;
           }
 
           .download-button {
-            margin-top: -60px;
+            margin-top: -25px;
           }
         }
       }
@@ -484,6 +518,13 @@ body {
         .category:nth-child(2), .category:nth-child(3) {
           width: 50px;
         }
+      }
+
+      .search-result-item {
+        .description {
+          width: 355px;
+        }
+
       }
     }
   }

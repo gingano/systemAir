@@ -704,3 +704,8 @@
 body {
   font-family: 'DaxlinePro', sans-serif;
   overflow-x: hidden; }
+
+.chartdiv {
+  width: 1290px;
+  height: 616px;
+  margin-left: auto; }
