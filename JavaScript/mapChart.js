@@ -193,7 +193,8 @@ currentCountries.mapPolygons.template.events.on("hit", function(e) {
 
   countryDescription.innerHTML = '' +
     '<h3>' + currentCountry.name + '</h3>' +
-    '<ul class="description-list"></ul>'
+    '<ul class="description-list"></ul>' +
+    '<div class="close-button"><div></div><div></div></div>'
 
   currentCountry.value.forEach(function (value) {
     let listItem = document.createElement('li');
