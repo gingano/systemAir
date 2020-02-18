@@ -1,0 +1,175 @@
+.control-panel {
+  .zoom-buttons {
+    span {
+      color: #808080;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .zoom-plus-button, .zoom-minus-button {
+      padding: 0 6.3px;
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      border: 1px solid #004985;
+      border-radius: 50%;
+      text-decoration: none;
+
+      span {
+        color: #004985;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+      }
+    }
+
+    .zoom-minus-button {
+      padding: 0 8px;
+    }
+  }
+}
+
+.map-container {
+  .chartdiv {
+    width: 1290px;
+    height: 616px;
+    margin-left: auto;
+  }
+
+  .country-description-active {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .country-description {
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    z-index: 2;
+    padding: 20px 32px;
+    position: absolute;
+    width: 309px;
+    min-height: 195px;
+    height: fit-content;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    background-color: #004985;
+    transform: translate(-346px, -50%);
+
+    h3 {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .description-list {
+      padding-left: 0;
+      margin-top: 12px;
+      list-style: none;
+
+      li:first-child {
+        margin-top: 0;
+      }
+
+      li {
+        padding-left: 32px;
+        margin-top: 10px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+
+        .marker {
+          display: inline-block;
+          position: absolute;
+          border-radius: 50%;
+          left: 30px;
+          width: 16px;
+          height: 16px;
+        }
+
+        .special-star {
+          display: inline-block;
+          position: absolute;
+          left: 33px;
+          margin-top: 3px;
+          width: 10px;
+          height: 9px;
+          background: url("../../Icons/special-star.svg") no-repeat !important;
+        }
+      }
+    }
+
+    .close-button {
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 22px;
+      width: 13px;
+      height: 13px;
+
+      div {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+      }
+
+      div:nth-child(1) {
+        transform: rotate(45deg);
+      }
+
+      div:nth-child(2) {
+        transform: rotate(-45deg);
+      }
+    }
+
+    .button:hover {
+      span:before {
+        transform: translate(7px, 0);
+      }
+    }
+
+    .button {
+      text-decoration: none;
+
+      span:before {
+        content: '';
+        display: block;
+        margin-top: 3.3px;
+        margin-right: 15px;
+        width: 8px;
+        height: 11px;
+        background: url("../../Icons/button-arrow-white.svg") no-repeat;
+        transition: .3s;
+      }
+
+      span {
+        display: flex;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .country-description:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(0, -50%);
+    display: block;
+    width: 37px;
+    height: 3px;
+    background: #004985;
+    border-radius: 0 50% 50% 0;
+    opacity: 1;
+    transition: .3s;
+  }
+
+  .without-line:after {
+    opacity: 0;
+  }
+}
